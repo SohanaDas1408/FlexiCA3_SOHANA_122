@@ -1100,11 +1100,12 @@ with gr.Blocks(title="PLANETARY CLIMATE SENTINEL | Autonomous Multi-Agent AI", c
 
 if __name__ == "__main__":
     import os
-    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 7860)))
-    server_name = os.environ.get("GRADIO_SERVER_NAME", "0.0.0.0")
+    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 10000)))
+    server_name = "0.0.0.0"
     share_mode = os.getenv("GRADIO_SHARE", "false").lower() in ("true", "1", "yes")
-    print(f"🚀 Starting Planetary Climate Sentinel on {server_name}:{port} (share={share_mode})...")
+    print(f"🚀 Starting Planetary Climate Sentinel on {server_name}:{port} (share={share_mode})...", flush=True)
     demo.launch(server_name=server_name, server_port=port, share=share_mode, inbrowser=False)
+
 
 
 
