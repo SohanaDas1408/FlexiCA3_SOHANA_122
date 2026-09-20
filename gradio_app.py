@@ -1099,5 +1099,8 @@ with gr.Blocks(title="PLANETARY CLIMATE SENTINEL | Autonomous Multi-Agent AI", c
     prompt_btn4.click(lambda: "Explain the economic viability and cost trajectory of solar/wind energy compared to fossil fuels based on IPCC AR6 and IRENA benchmarks.", outputs=[chat_input])
 
 if __name__ == "__main__":
-    demo.launch(inbrowser=True)
+    import os
+    share_mode = os.getenv("GRADIO_SHARE", "true").lower() in ("true", "1", "yes")
+    demo.launch(share=share_mode, inbrowser=True)
+
 
