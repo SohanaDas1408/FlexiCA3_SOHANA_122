@@ -1,0 +1,42 @@
+[
+  {
+    "id": "art-001",
+    "title": "Global Ocean Temperatures Reach Unprecedented Highs for 12th Consecutive Month",
+    "source": "Copernicus Climate Change Service / Reuters",
+    "published_date": "2026-03-15T08:30:00Z",
+    "category": "Scientific Research",
+    "summary": "Scientists report sea surface temperatures broke all historical records, threatening marine ecosystems and intensifying Atlantic tropical storm formation.",
+    "content": "The European Union's Copernicus Climate Change Service confirmed today that average global sea surface temperatures have surpassed all previous records for the twelfth month in a row. Marine biologists warn of widespread coral bleaching across tropical reefs and disruptions in global fisheries. Climate researchers emphasize that elevated ocean heat content acts as a primary catalyst for intense atmospheric storm systems and accelerated coastal erosion.",
+    "url": "https://example.com/climate/ocean-temperatures-record-highs"
+  },
+  {
+    "id": "art-002",
+    "title": "International Renewable Energy Alliance Announces Record $450B Solar & Wind Deployment",
+    "source": "International Energy Agency (IEA)",
+    "published_date": "2026-03-18T14:15:00Z",
+    "category": "Renewable Energy & Technology",
+    "summary": "Global renewable investments surge 25% year-over-year, outpacing fossil fuel capital expenditure and accelerating grid decarbonization across developing economies.",
+    "content": "A milestone report from the International Energy Agency indicates global additions of renewable power capacity increased by over 50% in the past year. Driven by manufacturing scale in photovoltaic cells and next-generation offshore wind turbines, renewable energy accounted for nearly 85% of all new global electricity capacity additions. Policymakers noted that grid infrastructure modernization remains the next critical frontier.",
+    "url": "https://example.com/energy/renewable-deployment-record"
+  },
+  {
+    "id": "art-003",
+    "title": "Unprecedented Drought in Mediterranean Agricultural Basins Threatens Grain Security",
+    "source": "UN Food & Agriculture Organization (FAO)",
+    "published_date": "2026-03-19T10:00:00Z",
+    "category": "Food Security & Agriculture",
+    "summary": "Extended winter drought combined with heatwaves reduces regional crop yields by 30%, prompting emergency adaptation funding and water rationing protocols.",
+    "content": "Severe precipitation deficits spanning southern Europe and North Africa have depleted strategic reservoir levels to under 40% capacity. Agronomists from the UN FAO warn that winter wheat and olive harvests face drastic reductions. The European Commission has activated emergency agricultural contingency funds while urging accelerated adoption of drought-resistant cultivars and precision drip irrigation infrastructure.",
+    "url": "https://example.com/climate/mediterranean-drought-agriculture"
+  },
+  {
+    "id": "art-004",
+    "title": "Global Carbon Capture Claims Questioned by Environmental Oversight Committee",
+    "source": "Climate Accountability Project",
+    "published_date": "2026-03-20T06:45:00Z",
+    "category": "Policy & Greenwashing Watch",
+    "summary": "Independent audit reveals that prominent industrial direct-air carbon capture facilities are operating at less than 20% of publicized sequestration targets.",
+    "content": "A watchdog investigation into global industrial Carbon Capture and Storage (CCS) projects revealed significant discrepancies between corporate net-zero marketing claims and verified carbon permanence. The study highlighted that several high-profile facilities consumed more energy during operation than the carbon emissions offset, underscoring the urgent need for stringent regulatory validation standards and direct emission abatement.",
+    "url": "https://example.com/watchdog/carbon-capture-audit"
+  }
+]
