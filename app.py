@@ -9,14 +9,18 @@ os.environ["GRADIO_SERVER_NAME"] = "0.0.0.0"
 from gradio_app import demo
 
 if __name__ == "__main__":
-    # Render assigns the PORT environment variable dynamically (defaults to 10000 on Render)
-    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 10000)))
+    # Render assigns the PORT environment variable dynamically (e.g. 10000). Locally defaults to 7860.
+    port_env = os.environ.get("PORT") or os.environ.get("GRADIO_SERVER_PORT")
+    port = int(port_env) if port_env else 7860
     server_name = "0.0.0.0"
     
-    print(f"🚀 Launching Planetary Climate Sentinel on {server_name}:{port} for Render cloud deployment...", flush=True)
-    demo.launch(
-        server_name=server_name,
-        server_port=port,
-        share=False,
-        inbrowser=False
-    )
+    print(f"🚀 Launching Planetary Climate Sentinel on {server_name}:{port} for cloud deployment...", flush=True)
+    try:
+        demo.launch(
+            server_name=server_name,
+            server_port=port,
+            share=False,
+            inbrowser=False
+        )
+    except OSError:
+        demo.launch(server_name=server_name, share=False, inbrowser=False)

@@ -1100,11 +1100,18 @@ with gr.Blocks(title="PLANETARY CLIMATE SENTINEL | Autonomous Multi-Agent AI", c
 
 if __name__ == "__main__":
     import os
-    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 10000)))
+    port_env = os.environ.get("PORT") or os.environ.get("GRADIO_SERVER_PORT")
+    server_port = int(port_env) if port_env else 7860
     server_name = "0.0.0.0"
     share_mode = os.getenv("GRADIO_SHARE", "false").lower() in ("true", "1", "yes")
-    print(f"🚀 Starting Planetary Climate Sentinel on {server_name}:{port} (share={share_mode})...", flush=True)
-    demo.launch(server_name=server_name, server_port=port, share=share_mode, inbrowser=False)
+    
+    print(f"🚀 Starting Planetary Climate Sentinel on {server_name}:{server_port} (share={share_mode})...", flush=True)
+    try:
+        demo.launch(server_name=server_name, server_port=server_port, share=share_mode, inbrowser=True)
+    except OSError:
+        print(f"⚠️ Port {server_port} is busy, auto-assigning next available port...")
+        demo.launch(server_name=server_name, share=share_mode, inbrowser=True)
+
 
 
 
